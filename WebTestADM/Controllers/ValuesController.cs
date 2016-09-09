@@ -19,7 +19,7 @@ namespace WebTestADM.Controllers
         // GET api/values/5
         public Food.Model.Food Get(int id)
         {
-            return new Food.Model.Food { Id = 23, Description = "test"};
+            return new Food.Model.Food { FoodId = 23, Description = "test"};
         }
 
         // POST api/values

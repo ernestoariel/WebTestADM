@@ -1,4 +1,3 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
@@ -10,6 +9,15 @@ EndProject
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingProject", "ModelingProject\ModelingProject.modelproj", "{EAB6169C-6522-451C-9227-49870D73AAD8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Food.Dal", "Food.Dal\Food.Dal.csproj", "{5A523663-9ED3-4984-A265-144A50902271}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Food.Common", "Food.Common\Food.Common.csproj", "{9AE42DD8-0774-4451-A9A2-84504990940B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Script", "Script", "{ED8F1F52-C1BE-4469-A3FF-F77F64E1AD39}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Structure", "Structure", "{20BBDE93-6506-4E44-8608-A4AD68A5720C}"
+	ProjectSection(SolutionItems) = preProject
+		Script\Structure\InitialCreate.sql = Script\Structure\InitialCreate.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,8 +41,15 @@ Global
 		{5A523663-9ED3-4984-A265-144A50902271}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A523663-9ED3-4984-A265-144A50902271}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A523663-9ED3-4984-A265-144A50902271}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AE42DD8-0774-4451-A9A2-84504990940B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AE42DD8-0774-4451-A9A2-84504990940B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AE42DD8-0774-4451-A9A2-84504990940B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AE42DD8-0774-4451-A9A2-84504990940B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{20BBDE93-6506-4E44-8608-A4AD68A5720C} = {ED8F1F52-C1BE-4469-A3FF-F77F64E1AD39}
 	EndGlobalSection
 EndGlobal

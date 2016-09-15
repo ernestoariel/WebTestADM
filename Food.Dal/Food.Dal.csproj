@@ -66,9 +66,9 @@
       <Project>{9ae42dd8-0774-4451-a9a2-84504990940b}</Project>
       <Name>Food.Common</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Food.Model\Food.Model.csproj">
+    <ProjectReference Include="..\Food.Core\Food.Core.csproj">
       <Project>{5a3c5e80-98e4-429a-977f-3aa049251552}</Project>
-      <Name>Food.Model</Name>
+      <Name>Food.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

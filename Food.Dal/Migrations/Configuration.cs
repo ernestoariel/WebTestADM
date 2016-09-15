@@ -29,14 +29,14 @@ namespace Food.Dal.Migrations
             //    );
             //
 
-            var foodList = new List<Model.Food>
+            var foodList = new List<Core.Food>
             {
-                new Model.Food { FoodId  = 1, Description = "Chuletas cerdo"},
-                new Model.Food { FoodId = 2, Description = "Ensalada normal"},
-                new Model.Food { FoodId = 3, Description = "Milanesa frita"},
-                new Model.Food { FoodId = 4, Description = "Papas fritas"},
-                new Model.Food { FoodId = 5, Description = "Tallarines"},
-                new Model.Food { FoodId = 6, Description = "Salsa bolognesa"}
+                new Core.Food { FoodId  = 1, Description = "Chuletas cerdo"},
+                new Core.Food { FoodId = 2, Description = "Ensalada normal"},
+                new Core.Food { FoodId = 3, Description = "Milanesa frita"},
+                new Core.Food { FoodId = 4, Description = "Papas fritas"},
+                new Core.Food { FoodId = 5, Description = "Tallarines"},
+                new Core.Food { FoodId = 6, Description = "Salsa bolognesa"}
             };
             foodList.ForEach(p => context.Foods.AddOrUpdate( q => q.FoodId, p));
             context.SaveChanges();

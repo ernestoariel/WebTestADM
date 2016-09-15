@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Food.Model
+namespace Food.Core
 {
     /// <summary>
     /// Application User

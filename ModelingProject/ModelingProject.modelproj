@@ -35,8 +35,8 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Food.Model\Food.Model.csproj">
-      <Name>Food.Model</Name>
+    <ProjectReference Include="..\Food.Model\Food.Core.csproj">
+      <Name>Food.Core</Name>
       <Project>{5a3c5e80-98e4-429a-977f-3aa049251552}</Project>
     </ProjectReference>
   </ItemGroup>

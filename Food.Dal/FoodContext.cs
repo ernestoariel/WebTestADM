@@ -5,8 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Food.Common;
-using Food.Model;
-using Food = Food.Model.Food;
+using Food.Core;
+using Food = Food.Core.Food;
 
 namespace Food.Dal
 {
@@ -17,7 +17,7 @@ namespace Food.Dal
             
         }
 
-        public DbSet<Model.Food> Foods { get; set; }
+        public DbSet<Core.Food> Foods { get; set; }
 
         public DbSet<Measure> Measures { get; set; }
 

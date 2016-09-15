@@ -6,7 +6,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Food.Model
+namespace Food.Core
 {
     /// <summary>
     /// Food measure, a piece, 1 pound, 1 Kilo                

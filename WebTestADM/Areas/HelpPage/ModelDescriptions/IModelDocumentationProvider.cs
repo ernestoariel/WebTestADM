@@ -1,7 +1,7 @@
 using System;
 using System.Reflection;
 
-namespace WebTestADM.Areas.HelpPage.ModelDescriptions
+namespace Food.WebApi.Areas.HelpPage.ModelDescriptions
 {
     public interface IModelDocumentationProvider
     {

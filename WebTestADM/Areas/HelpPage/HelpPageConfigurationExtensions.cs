@@ -11,10 +11,11 @@ using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
-using WebTestADM.Areas.HelpPage.ModelDescriptions;
-using WebTestADM.Areas.HelpPage.Models;
+using Food.WebApi.Areas.HelpPage.ModelDescriptions;
+using Food.WebApi.Areas.HelpPage.Models;
+using Food.WebApi.Areas.HelpPage.SampleGeneration;
 
-namespace WebTestADM.Areas.HelpPage
+namespace Food.WebApi.Areas.HelpPage
 {
     public static class HelpPageConfigurationExtensions
     {

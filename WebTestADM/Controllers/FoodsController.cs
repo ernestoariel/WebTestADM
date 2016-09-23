@@ -4,7 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using Food.Core.Interfases;
+using Food.Services;
 
 namespace Food.WebApi.Controllers
 {
@@ -15,6 +15,12 @@ namespace Food.WebApi.Controllers
         {
             _foodService = foodService;
         }
+
+        public IEnumerable<Core.Food> GetFoods()
+        {
+            return _foodService.GetAll();
+        }
+
 
     }
 }

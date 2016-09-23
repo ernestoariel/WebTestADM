@@ -1,10 +1,10 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using WebTestADM.Areas.HelpPage.ModelDescriptions;
-using WebTestADM.Areas.HelpPage.Models;
+using Food.WebApi.Areas.HelpPage.ModelDescriptions;
+using Food.WebApi.Areas.HelpPage.Models;
 
-namespace WebTestADM.Areas.HelpPage.Controllers
+namespace Food.WebApi.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.

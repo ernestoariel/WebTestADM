@@ -6,18 +6,17 @@ using System.Security.Cryptography;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
-using System.Web.Http.ModelBinding;
+using Food.WebApi.Models;
+using Food.WebApi.Providers;
+using Food.WebApi.Results;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
-using WebTestADM.Models;
-using WebTestADM.Providers;
-using WebTestADM.Results;
 
-namespace WebTestADM.Controllers
+namespace Food.WebApi.Controllers
 {
     [Authorize]
     [RoutePrefix("api/Account")]

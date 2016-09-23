@@ -1,7 +1,8 @@
 using System.Web.Http;
 using System.Web.Mvc;
+using Food.WebApi.Areas.HelpPage.App_Start;
 
-namespace WebTestADM.Areas.HelpPage
+namespace Food.WebApi.Areas.HelpPage
 {
     public class HelpPageAreaRegistration : AreaRegistration
     {

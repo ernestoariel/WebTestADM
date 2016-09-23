@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
-using Food.Core.Interfases;
+using System.Linq;
+using Food.Core;
 using Mehdime.Entity;
 
-namespace Food.Core.Services
+namespace Food.Services
 {
     public class FoodService : IFoodService
     {
@@ -12,13 +13,12 @@ namespace Food.Core.Services
         {
             _dbContextScopeFactory = dbContextScopeFactory;
         }
-        public ICollection<Food> GetAll()
+        public IEnumerable<Core.Food> GetAll()
         {
-            using (var dbContextScope = _dbContextScopeFactory.Create())
+            using (var dbContextScope = _dbContextScopeFactory.CreateReadOnly())
             {
-
+                return dbContextScope.DbContexts.Get<Dal.FoodContext>().Foods.ToList();
             }
-            return null;
         } 
     }
 }

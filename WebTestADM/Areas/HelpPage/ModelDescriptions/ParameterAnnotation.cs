@@ -1,6 +1,6 @@
 using System;
 
-namespace WebTestADM.Areas.HelpPage.ModelDescriptions
+namespace Food.WebApi.Areas.HelpPage.ModelDescriptions
 {
     public class ParameterAnnotation
     {

@@ -1,7 +1,6 @@
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace WebTestADM.Areas.HelpPage.ModelDescriptions
+namespace Food.WebApi.Areas.HelpPage.ModelDescriptions
 {
     public class ParameterDescription
     {

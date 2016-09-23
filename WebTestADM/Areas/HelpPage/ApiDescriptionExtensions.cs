@@ -3,7 +3,7 @@ using System.Text;
 using System.Web;
 using System.Web.Http.Description;
 
-namespace WebTestADM.Areas.HelpPage
+namespace Food.WebApi.Areas.HelpPage
 {
     public static class ApiDescriptionExtensions
     {

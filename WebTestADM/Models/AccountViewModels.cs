@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace WebTestADM.Models
+namespace Food.WebApi.Models
 {
     // Models returned by AccountController actions.
 

@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Food.WebApi;
 using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartup(typeof(WebTestADM.Startup))]
+[assembly: OwinStartup(typeof(Startup))]
 
-namespace WebTestADM
+namespace Food.WebApi
 {
     public partial class Startup
     {

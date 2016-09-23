@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5A3C5E80-98E4-429A-977F-3AA049251552}</ProjectGuid>
+    <ProjectGuid>{137B99A0-799C-41F7-AE56-EC156B8EADFA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Food.Model</RootNamespace>
-    <AssemblyName>Food.Model</AssemblyName>
+    <RootNamespace>Food.Services</RootNamespace>
+    <AssemblyName>Food.Services</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,6 +30,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Mehdime.Entity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Mehdime.Entity.1.0.0\lib\Mehdime.Entity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -41,16 +53,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApiUser.cs" />
-    <Compile Include="AuthToken.cs" />
-    <Compile Include="Diary.cs" />
-    <Compile Include="DiaryEntry.cs" />
-    <Compile Include="Food.cs" />
-    <Compile Include="Measure.cs" />
+    <Compile Include="DiaryService.cs" />
+    <Compile Include="FoodService.cs" />
+    <Compile Include="IDiaryService.cs" />
+    <Compile Include="IFoodService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Food.Core\Food.Core.csproj">
+      <Project>{5a3c5e80-98e4-429a-977f-3aa049251552}</Project>
+      <Name>Food.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Food.Dal\Food.Dal.csproj">
+      <Project>{5a523663-9ed3-4984-a265-144a50902271}</Project>
+      <Name>Food.Dal</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

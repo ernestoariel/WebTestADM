@@ -18,7 +18,7 @@ namespace Food.WebApi
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(p => WebApiConfig.Register(p, _container));
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
-            RouteConfig.RegisterRoutes(RouteTable.Routes);
+            //RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
 

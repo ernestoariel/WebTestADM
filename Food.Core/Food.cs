@@ -14,5 +14,7 @@ namespace Food.Core
         public string Description { get; set; }
         [Timestamp]
         public byte[] RowVersion { get; set; }
+
+        public virtual ICollection<Measure> Measures { get; set; }
     }
 }

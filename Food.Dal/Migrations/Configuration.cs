@@ -28,18 +28,6 @@ namespace Food.Dal.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
-
-            var foodList = new List<Core.Food>
-            {
-                new Core.Food { FoodId  = 1, Description = "Chuletas cerdo"},
-                new Core.Food { FoodId = 2, Description = "Ensalada normal"},
-                new Core.Food { FoodId = 3, Description = "Milanesa frita"},
-                new Core.Food { FoodId = 4, Description = "Papas fritas"},
-                new Core.Food { FoodId = 5, Description = "Tallarines"},
-                new Core.Food { FoodId = 6, Description = "Salsa bolognesa"}
-            };
-            foodList.ForEach(p => context.Foods.AddOrUpdate( q => q.FoodId, p));
-            context.SaveChanges();
         }
     }
 }

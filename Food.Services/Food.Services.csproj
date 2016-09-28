@@ -54,6 +54,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DiaryService.cs" />
+    <Compile Include="DTOs\FoodDTO.cs" />
+    <Compile Include="DTOs\MeasureDTO.cs" />
     <Compile Include="FoodService.cs" />
     <Compile Include="IDiaryService.cs" />
     <Compile Include="IFoodService.cs" />

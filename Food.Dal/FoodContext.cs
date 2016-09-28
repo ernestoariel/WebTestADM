@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Food.Common;
 using Food.Core;
+using Food.Dal.TestData;
 using Food = Food.Core.Food;
 
 namespace Food.Dal
@@ -14,7 +15,6 @@ namespace Food.Dal
     {
         public FoodContext() : base(Settings.ConnectionString)
         {
-            
         }
 
         public DbSet<Core.Food> Foods { get; set; }
@@ -30,7 +30,7 @@ namespace Food.Dal
         {
             modelBuilder.Entity<Measure>()
                 .HasRequired( c=>c.Food)
-                .WithMany()
+                .WithMany( p => p.Measures)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<DiaryEntry>()

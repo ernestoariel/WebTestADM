@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Food.Services.DTOs;
 
 namespace Food.Services
 {
     public interface IFoodService
     {
-        IEnumerable<Core.Food> GetAll();
+        IEnumerable<FoodDTO> GetAll();
+        IEnumerable<FoodDTO> GetByQuery(int page, int pageSize, bool inDiaryEntries);
     }
 }

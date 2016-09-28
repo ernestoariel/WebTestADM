@@ -5,6 +5,10 @@ namespace Food.WebApi
 {
     public class RouteConfig
     {
+        /// <summary>
+        /// Routes for MVC
+        /// </summary>
+        /// <param name="routes"></param>
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");

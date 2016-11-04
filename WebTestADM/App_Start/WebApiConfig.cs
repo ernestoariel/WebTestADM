@@ -1,5 +1,6 @@
 ﻿using System.Web.Http;
 using System.Web.Http.Dispatcher;
+using System.Web.Http.ExceptionHandling;
 using Castle.Windsor;
 using Food.WebApi.Plumbing;
 using Microsoft.Owin.Security.OAuth;
@@ -11,10 +12,28 @@ namespace Food.WebApi
     {
         public static void Register(HttpConfiguration config, IWindsorContainer container)
         {
+            RegisterExceptionLogger(config);
+            RegisterExceptionHandler(config);
+            RegisterDelegateHandler(config);
             ConfigureAuthentication(config);
             MapRoutes(config);
             //RegisterWindsorResolver(config, container);
             RegisterControllerActivator(container);
+        }
+
+        private static void RegisterDelegateHandler(HttpConfiguration config)
+        {
+            GlobalConfiguration.Configuration.MessageHandlers.Add(new RequestAndReponseLogHandler());
+        }
+
+        private static void RegisterExceptionLogger(HttpConfiguration config)
+        {
+            config.Services.Add(typeof(IExceptionLogger), new GlobalExceptionLogger());
+        }
+
+        private static void RegisterExceptionHandler(HttpConfiguration config)
+        {
+            config.Services.Replace(typeof(IExceptionHandler), new GlobalExceptionHandler());
         }
 
         private static void RegisterWindsorResolver(HttpConfiguration config, IWindsorContainer container)

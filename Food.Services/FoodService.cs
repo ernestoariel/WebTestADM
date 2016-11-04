@@ -21,11 +21,15 @@ namespace Food.Services
         {
             using (var dbContextScope = _dbContextScopeFactory.CreateReadOnly())
             {
-                return dbContextScope.DbContexts.Get<FoodContext>().Foods.ToList().Select(FoodDTO.FromFood);
+                return
+                    dbContextScope.DbContexts.Get<FoodContext>()
+                        .Foods.Include(p => p.Measures)
+                        .ToList()
+                        .Select(FoodDTO.FromFood);
             }
         }
 
-        public IEnumerable<FoodDTO> GetByQuery(int page = 1, int pageSize = 5, bool inDiaryEntries = false)
+        public IEnumerable<FoodDTO> Search(int page = 0, int pageSize = 5, bool inDiaryEntries = false, int? foodId = null)
         {
             using (var context = _dbContextScopeFactory.CreateReadOnly())
             {
@@ -33,6 +37,7 @@ namespace Food.Services
 
                 IQueryable<Core.Food> query = foodContext.Foods.Include( x=> x.Measures);
                 if (inDiaryEntries) query = query.Where(p => foodContext.DiaryEntries.Any(q => q.FoodId == p.FoodId));
+                if (foodId.HasValue) query = query.Where(p => p.FoodId == foodId);
                 query = query
                     .OrderBy(c => c.Description)
                     .Skip(page*pageSize)

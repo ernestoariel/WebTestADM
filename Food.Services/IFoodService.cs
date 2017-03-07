@@ -10,6 +10,8 @@ namespace Food.Services
     public interface IFoodService
     {
         IEnumerable<FoodDTO> GetAll();
-        IEnumerable<FoodDTO> Search(int page, int pageSize, bool inDiaryEntries, int? foodId);
+        IEnumerable<FoodDTO> Search(int? foodId = null, int page = 0, int pageSize = 5, bool inDiaryEntries = false);
+        int AddFood(FoodDTO foodDto);
+        int UpdateFood(FoodDTO foodDto);
     }
 }

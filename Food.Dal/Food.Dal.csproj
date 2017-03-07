@@ -54,9 +54,9 @@
     <Compile Include="Migrations\201609091851257_InitialCreate.Designer.cs">
       <DependentUpon>201609091851257_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201609261850541_AddFoodList.cs" />
-    <Compile Include="Migrations\201609261850541_AddFoodList.Designer.cs">
-      <DependentUpon>201609261850541_AddFoodList.cs</DependentUpon>
+    <Compile Include="Migrations\201702161910317_FoodIndex.cs" />
+    <Compile Include="Migrations\201702161910317_FoodIndex.Designer.cs">
+      <DependentUpon>201702161910317_FoodIndex.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -80,8 +80,8 @@
     <EmbeddedResource Include="Migrations\201609091851257_InitialCreate.resx">
       <DependentUpon>201609091851257_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609261850541_AddFoodList.resx">
-      <DependentUpon>201609261850541_AddFoodList.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201702161910317_FoodIndex.resx">
+      <DependentUpon>201702161910317_FoodIndex.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

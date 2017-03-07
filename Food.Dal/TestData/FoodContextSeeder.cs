@@ -75,7 +75,6 @@ namespace Food.Dal.TestData
             };
             foodList.ForEach(p => context.Foods.AddOrUpdate(q => q.FoodId, p));
             diaryList.ForEach( p => context.Diaries.AddOrUpdate( q=> q.DiaryId, p));
-            context.SaveChanges();
             base.Seed(context);
         }
     }

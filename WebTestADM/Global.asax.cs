@@ -20,13 +20,15 @@ namespace Food.WebApi
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             //RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            
         }
 
         public static void ConfigureWindsor(HttpConfiguration configuration)
         {
             _container = new WindsorContainer();
-            _container.Install(FromAssembly.This());
             _container.Kernel.Resolver.AddSubResolver(new CollectionResolver(_container.Kernel, true));
+            _container.Install(FromAssembly.This());
+            
         }
 
 

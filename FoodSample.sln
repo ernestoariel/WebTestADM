@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Food.WebApi", "WebTestADM\Food.WebApi.csproj", "{8DC3C21F-C292-4A53-A489-24F9BE6517E0}"
 EndProject
@@ -16,10 +16,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Script", "Script", "{ED8F1F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Structure", "Structure", "{20BBDE93-6506-4E44-8608-A4AD68A5720C}"
 	ProjectSection(SolutionItems) = preProject
+		Script\Structure\FoodIndex.sql = Script\Structure\FoodIndex.sql
 		Script\Structure\InitialCreate.sql = Script\Structure\InitialCreate.sql
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Food.Services", "Food.Services\Food.Services.csproj", "{137B99A0-799C-41F7-AE56-EC156B8EADFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Food.Services.Tests", "Food.Services.Tests\Food.Services.Tests.csproj", "{3002D3DD-DF14-4986-87C9-045FF3B6163F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +54,10 @@ Global
 		{137B99A0-799C-41F7-AE56-EC156B8EADFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{137B99A0-799C-41F7-AE56-EC156B8EADFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{137B99A0-799C-41F7-AE56-EC156B8EADFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3002D3DD-DF14-4986-87C9-045FF3B6163F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3002D3DD-DF14-4986-87C9-045FF3B6163F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3002D3DD-DF14-4986-87C9-045FF3B6163F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3002D3DD-DF14-4986-87C9-045FF3B6163F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

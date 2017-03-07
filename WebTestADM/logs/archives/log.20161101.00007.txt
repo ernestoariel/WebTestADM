@@ -1,0 +1,201 @@
+2016-11-01 14:21:16.4180|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, User-Agent, value, ,Mozilla/5.0,(Windows NT 6.3; WOW64),AppleWebKit/537.36,(KHTML, like Gecko),Chrome/54.0.2840.71,Safari/537.36
+2016-11-01 14:21:16.4180|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Postman-Token, value, ,93e61775-90bf-282a-d739-17d01627b0d7
+2016-11-01 14:21:42.5338|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|System.DivideByZeroException: Attempted to divide by zero.
+   at Food.WebApi.Controllers.FoodsController.Get(Int32 id) in C:\AppSource\Personal\WebTestADM\WebTestADM\Controllers\FoodsController.cs:line 52
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-01 14:21:42.5338|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Absolute path, /FoodWebApi/api/Foods/23, uri,  http://localhost/FoodWebApi/api/Foods/23, scheme, http
+2016-11-01 14:21:42.5338|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Http verb, GET
+2016-11-01 14:21:42.5338|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Cache-Control, value, ,no-cache
+2016-11-01 14:21:42.5338|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Connection, value, ,keep-alive
+2016-11-01 14:21:42.5338|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Accept, value, ,*/*
+2016-11-01 14:21:42.5338|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Accept-Encoding, value, ,gzip,deflate,sdch,br
+2016-11-01 14:21:42.5338|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Accept-Language, value, ,en-US,en; q=0.8
+2016-11-01 14:21:42.5338|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Host, value, ,localhost
+2016-11-01 14:21:42.5338|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, User-Agent, value, ,Mozilla/5.0,(Windows NT 6.3; WOW64),AppleWebKit/537.36,(KHTML, like Gecko),Chrome/54.0.2840.71,Safari/537.36
+2016-11-01 14:21:42.5338|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Postman-Token, value, ,b4ba3ab4-23a6-8f6d-9717-6eb8ae2162c1
+2016-11-01 14:24:27.8956|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|System.DivideByZeroException: Attempted to divide by zero.
+   at Food.WebApi.Controllers.FoodsController.Get(Int32 id) in C:\AppSource\Personal\WebTestADM\WebTestADM\Controllers\FoodsController.cs:line 52
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-01 14:24:27.9156|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Absolute path, /FoodWebApi/api/Foods/23, uri,  http://localhost/FoodWebApi/api/Foods/23, scheme, http
+2016-11-01 14:24:27.9156|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Http verb, GET
+2016-11-01 14:24:57.7819|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Cache-Control, value, ,no-cache
+2016-11-01 14:25:06.3394|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Connection, value, ,keep-alive
+2016-11-01 14:25:06.3394|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Accept, value, ,*/*
+2016-11-01 14:25:06.3394|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Accept-Encoding, value, ,gzip,deflate,sdch,br
+2016-11-01 14:25:06.3394|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Accept-Language, value, ,en-US,en; q=0.8
+2016-11-01 14:25:06.3394|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Host, value, ,localhost
+2016-11-01 14:25:06.3394|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, User-Agent, value, ,Mozilla/5.0,(Windows NT 6.3; WOW64),AppleWebKit/537.36,(KHTML, like Gecko),Chrome/54.0.2840.71,Safari/537.36
+2016-11-01 14:25:06.3394|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Postman-Token, value, ,6aac2f9f-1575-837b-495c-ec745438cb07
+2016-11-01 14:35:29.0486|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|System.DivideByZeroException: Attempted to divide by zero.
+   at Food.WebApi.Controllers.FoodsController.Get(Int32 id) in C:\AppSource\Personal\WebTestADM\WebTestADM\Controllers\FoodsController.cs:line 52
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-01 14:35:29.0666|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Absolute path, /FoodWebApi/api/Foods/23, uri,  http://localhost/FoodWebApi/api/Foods/23, scheme, http
+2016-11-01 14:35:29.0666|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Http verb, GET
+2016-11-01 14:35:29.0666|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Cache-Control, value, ,no-cache
+2016-11-01 14:35:29.0666|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Connection, value, ,keep-alive
+2016-11-01 14:35:29.0666|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Accept, value, ,*/*
+2016-11-01 14:35:29.0666|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Accept-Encoding, value, ,gzip,deflate,sdch,br
+2016-11-01 14:35:29.0666|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Accept-Language, value, ,en-US,en; q=0.8
+2016-11-01 14:35:29.0666|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Host, value, ,localhost
+2016-11-01 14:35:29.0666|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, User-Agent, value, ,Mozilla/5.0,(Windows NT 6.3; WOW64),AppleWebKit/537.36,(KHTML, like Gecko),Chrome/54.0.2840.71,Safari/537.36
+2016-11-01 14:35:29.0666|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Postman-Token, value, ,dc33f4df-f37d-e9bb-9b01-cd1b27f7fb27
+2016-11-01 14:35:29.0666|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request content: 
+2016-11-01 14:39:15.3141|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|System.DivideByZeroException: Attempted to divide by zero.
+   at Food.WebApi.Controllers.FoodsController.Add(FoodDTO foodDto) in C:\AppSource\Personal\WebTestADM\WebTestADM\Controllers\FoodsController.cs:line 63
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClassc.<GetExecutor>b__6(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-01 14:39:15.3321|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Absolute path, /FoodWebApi/api/Foods, uri,  http://localhost/FoodWebApi/api/Foods, scheme, http
+2016-11-01 14:39:15.3321|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Http verb, POST
+2016-11-01 14:39:15.3321|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Cache-Control, value, ,no-cache
+2016-11-01 14:39:15.3321|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Connection, value, ,keep-alive
+2016-11-01 14:39:15.3321|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Accept, value, ,*/*
+2016-11-01 14:39:15.3321|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Accept-Encoding, value, ,gzip,deflate,br
+2016-11-01 14:39:15.3321|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Accept-Language, value, ,en-US,en; q=0.8
+2016-11-01 14:39:15.3321|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Host, value, ,localhost
+2016-11-01 14:39:15.3321|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, User-Agent, value, ,Mozilla/5.0,(Windows NT 6.3; WOW64),AppleWebKit/537.36,(KHTML, like Gecko),Chrome/54.0.2840.71,Safari/537.36
+2016-11-01 14:39:15.3321|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Postman-Token, value, ,e0917af7-f9e7-f50b-a7e3-35edd93d506c
+2016-11-01 14:39:15.3321|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Origin, value, ,chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+2016-11-01 14:39:15.3321|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request content: 
+2016-11-01 14:40:02.8992|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|System.DivideByZeroException: Attempted to divide by zero.
+   at Food.WebApi.Controllers.FoodsController.Add(FoodDTO foodDto) in C:\AppSource\Personal\WebTestADM\WebTestADM\Controllers\FoodsController.cs:line 63
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClassc.<GetExecutor>b__6(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-01 14:40:02.8992|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Absolute path, /FoodWebApi/api/Foods, uri,  http://localhost/FoodWebApi/api/Foods, scheme, http
+2016-11-01 14:40:02.8992|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Http verb, POST
+2016-11-01 14:40:02.8992|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Cache-Control, value, ,no-cache
+2016-11-01 14:40:02.8992|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Connection, value, ,keep-alive
+2016-11-01 14:40:02.8992|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Accept, value, ,*/*
+2016-11-01 14:40:02.8992|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Accept-Encoding, value, ,gzip,deflate,br
+2016-11-01 14:40:02.8992|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Accept-Language, value, ,en-US,en; q=0.8
+2016-11-01 14:40:02.8992|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Host, value, ,localhost
+2016-11-01 14:40:02.8992|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, User-Agent, value, ,Mozilla/5.0,(Windows NT 6.3; WOW64),AppleWebKit/537.36,(KHTML, like Gecko),Chrome/54.0.2840.71,Safari/537.36
+2016-11-01 14:40:02.8992|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Postman-Token, value, ,29fbb265-6752-6ff0-cb01-8a593792f8eb
+2016-11-01 14:40:02.8992|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Origin, value, ,chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+2016-11-01 14:48:08.3583|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request content: 
+2016-11-01 14:50:30.4094|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|System.DivideByZeroException: Attempted to divide by zero.
+   at Food.WebApi.Controllers.FoodsController.Add(FoodDTO foodDto) in C:\AppSource\Personal\WebTestADM\WebTestADM\Controllers\FoodsController.cs:line 63
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClassc.<GetExecutor>b__6(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2016-11-01 14:50:30.4094|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Absolute path, /FoodWebApi/api/Foods, uri,  http://localhost/FoodWebApi/api/Foods, scheme, http
+2016-11-01 14:50:30.4094|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Http verb, POST
+2016-11-01 14:50:30.4094|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Cache-Control, value, ,no-cache
+2016-11-01 14:50:30.4094|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Connection, value, ,keep-alive
+2016-11-01 14:50:30.4094|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Accept, value, ,*/*
+2016-11-01 14:50:30.4094|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Accept-Encoding, value, ,gzip,deflate,br
+2016-11-01 14:50:30.4094|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Accept-Language, value, ,en-US,en; q=0.8
+2016-11-01 14:50:30.4094|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Host, value, ,localhost
+2016-11-01 14:50:30.4094|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, User-Agent, value, ,Mozilla/5.0,(Windows NT 6.3; WOW64),AppleWebKit/537.36,(KHTML, like Gecko),Chrome/54.0.2840.71,Safari/537.36
+2016-11-01 14:50:30.4094|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Postman-Token, value, ,a61e2e0f-4357-1717-922d-f2680c35bd95
+2016-11-01 14:50:30.4094|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request header: key, Origin, value, ,chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+2016-11-01 14:50:30.4094|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Request content: 

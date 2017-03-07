@@ -1,0 +1,135 @@
+2017-01-10 14:08:25.1207|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Castle.MicroKernel.Handlers.HandlerException: Can't create component 'Food.Services.FoodService' as it has dependencies to be satisfied.
+
+'Food.Services.FoodService' is waiting for the following dependencies:
+- Service 'FluentValidation.IValidator`1[[Food.Services.DTOs.FoodDTO, Food.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]' which was not registered.
+
+   at Castle.MicroKernel.Handlers.DefaultHandler.AssertNotWaitingForDependency()
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.Handlers.AbstractHandler.Resolve(CreationContext context)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.ResolveFromKernelByType(CreationContext context, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.ResolveFromKernel(CreationContext context, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.ResolveCore(CreationContext context, ISubDependencyResolver contextHandlerResolver, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.Resolve(CreationContext context, ISubDependencyResolver contextHandlerResolver, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateConstructorArguments(ConstructorCandidate constructor, CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   at Castle.MicroKernel.Lifestyle.ScopedLifestyleManager.<>c__DisplayClass1.<Resolve>b__0(Action`1 afterCreated)
+   at Castle.MicroKernel.Lifestyle.Scoped.DefaultLifetimeScope.GetCachedInstance(ComponentModel model, ScopedInstanceActivationCallback createInstance)
+   at Castle.MicroKernel.Lifestyle.ScopedLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.Handlers.AbstractHandler.Resolve(CreationContext context)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   at Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   at Castle.Windsor.WindsorContainer.Resolve(Type service)
+   at Food.WebApi.Plumbing.WindsorCompositionRoot.Create(HttpRequestMessage request, HttpControllerDescriptor controllerDescriptor, Type controllerType) in C:\AppSource\Personal\WebTestADM\WebTestADM\Plumbing\WindsorCompositionRoot.cs:line 27
+   at System.Web.Http.Controllers.HttpControllerDescriptor.CreateController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2017-01-10 14:08:25.3237|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|AbsolutePath:/FoodWebApi/api/Foods, Uri:http://localhost/FoodWebApi/api/Foods, Scheme:http
+HttpVerb:PUT
+Headers:Key:Connection, Value:,keep-aliveKey:Accept, Value:,application/jsonKey:Accept-Encoding, Value:,gzip,deflate,sdch,brKey:Accept-Language, Value:,en-US,en; q=0.8Key:Host, Value:,localhostKey:Referer, Value:,http://localhost/FoodWebApi/swagger/ui/indexKey:User-Agent, Value:,Mozilla/5.0,(Windows NT 6.3; WOW64),AppleWebKit/537.36,(KHTML, like Gecko),Chrome/55.0.2883.87,Safari/537.36Key:Origin, Value:,http://localhost
+Request:{
+  "foodId": 0,
+  "description": "test",
+
+}
+
+2017-01-10 14:12:56.8140|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Castle.MicroKernel.Handlers.HandlerException: Can't create component 'Food.Services.FoodService' as it has dependencies to be satisfied.
+
+'Food.Services.FoodService' is waiting for the following dependencies:
+- Service 'FluentValidation.IValidator`1[[Food.Services.DTOs.FoodDTO, Food.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]' which was not registered.
+
+   at Castle.MicroKernel.Handlers.DefaultHandler.AssertNotWaitingForDependency()
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.Handlers.AbstractHandler.Resolve(CreationContext context)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.ResolveFromKernelByType(CreationContext context, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.ResolveFromKernel(CreationContext context, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.ResolveCore(CreationContext context, ISubDependencyResolver contextHandlerResolver, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.Resolve(CreationContext context, ISubDependencyResolver contextHandlerResolver, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateConstructorArguments(ConstructorCandidate constructor, CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   at Castle.MicroKernel.Lifestyle.ScopedLifestyleManager.<>c__DisplayClass1.<Resolve>b__0(Action`1 afterCreated)
+   at Castle.MicroKernel.Lifestyle.Scoped.DefaultLifetimeScope.GetCachedInstance(ComponentModel model, ScopedInstanceActivationCallback createInstance)
+   at Castle.MicroKernel.Lifestyle.ScopedLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.Handlers.AbstractHandler.Resolve(CreationContext context)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   at Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   at Castle.Windsor.WindsorContainer.Resolve(Type service)
+   at Food.WebApi.Plumbing.WindsorCompositionRoot.Create(HttpRequestMessage request, HttpControllerDescriptor controllerDescriptor, Type controllerType) in C:\AppSource\Personal\WebTestADM\WebTestADM\Plumbing\WindsorCompositionRoot.cs:line 27
+   at System.Web.Http.Controllers.HttpControllerDescriptor.CreateController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2017-01-10 14:12:56.8140|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|AbsolutePath:/FoodWebApi/api/Foods, Uri:http://localhost/FoodWebApi/api/Foods, Scheme:http
+HttpVerb:PUT
+Headers:Key:Connection, Value:,keep-aliveKey:Accept, Value:,application/jsonKey:Accept-Encoding, Value:,gzip,deflate,sdch,brKey:Accept-Language, Value:,en-US,en; q=0.8Key:Host, Value:,localhostKey:Referer, Value:,http://localhost/FoodWebApi/swagger/ui/indexKey:User-Agent, Value:,Mozilla/5.0,(Windows NT 6.3; WOW64),AppleWebKit/537.36,(KHTML, like Gecko),Chrome/55.0.2883.87,Safari/537.36Key:Origin, Value:,http://localhost
+Request:{
+  "foodId": 0,
+  "description": "test",
+
+}
+
+2017-01-10 14:14:59.3513|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|Castle.MicroKernel.ComponentRegistrationException: Type FluentValidation.IValidator`1[[Food.Services.DTOs.FoodDTO, Food.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] is abstract.
+ As such, it is not possible to instansiate it as implementation of service 'FluentValidation.IValidator`1[[Food.Services.DTOs.FoodDTO, Food.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. Did you forget to proxy it?
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateInstance(CreationContext context, ConstructorCandidate constructor, Object[] arguments)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   at Castle.MicroKernel.Lifestyle.SingletonLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.Handlers.AbstractHandler.Resolve(CreationContext context)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.ResolveFromKernelByType(CreationContext context, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.ResolveFromKernel(CreationContext context, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.ResolveCore(CreationContext context, ISubDependencyResolver contextHandlerResolver, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.Resolve(CreationContext context, ISubDependencyResolver contextHandlerResolver, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateConstructorArguments(ConstructorCandidate constructor, CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.Handlers.AbstractHandler.Resolve(CreationContext context)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.ResolveFromKernelByType(CreationContext context, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.ResolveFromKernel(CreationContext context, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.ResolveCore(CreationContext context, ISubDependencyResolver contextHandlerResolver, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.Resolvers.DefaultDependencyResolver.Resolve(CreationContext context, ISubDependencyResolver contextHandlerResolver, ComponentModel model, DependencyModel dependency)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.CreateConstructorArguments(ConstructorCandidate constructor, CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.Instantiate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.DefaultComponentActivator.InternalCreate(CreationContext context)
+   at Castle.MicroKernel.ComponentActivator.AbstractComponentActivator.Create(CreationContext context, Burden burden)
+   at Castle.MicroKernel.Lifestyle.AbstractLifestyleManager.CreateInstance(CreationContext context, Boolean trackedExternally)
+   at Castle.MicroKernel.Lifestyle.ScopedLifestyleManager.<>c__DisplayClass1.<Resolve>b__0(Action`1 afterCreated)
+   at Castle.MicroKernel.Lifestyle.Scoped.DefaultLifetimeScope.GetCachedInstance(ComponentModel model, ScopedInstanceActivationCallback createInstance)
+   at Castle.MicroKernel.Lifestyle.ScopedLifestyleManager.Resolve(CreationContext context, IReleasePolicy releasePolicy)
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.Handlers.AbstractHandler.Resolve(CreationContext context)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   at Castle.MicroKernel.DefaultKernel.Resolve(Type service, IDictionary arguments)
+   at Castle.Windsor.WindsorContainer.Resolve(Type service)
+   at Food.WebApi.Plumbing.WindsorCompositionRoot.Create(HttpRequestMessage request, HttpControllerDescriptor controllerDescriptor, Type controllerType) in C:\AppSource\Personal\WebTestADM\WebTestADM\Plumbing\WindsorCompositionRoot.cs:line 27
+   at System.Web.Http.Controllers.HttpControllerDescriptor.CreateController(HttpRequestMessage request)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2017-01-10 14:14:59.4253|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|AbsolutePath:/FoodWebApi/api/Foods, Uri:http://localhost/FoodWebApi/api/Foods, Scheme:http
+HttpVerb:PUT
+Headers:Key:Connection, Value:,keep-aliveKey:Accept, Value:,application/jsonKey:Accept-Encoding, Value:,gzip,deflate,sdch,brKey:Accept-Language, Value:,en-US,en; q=0.8Key:Host, Value:,localhostKey:Referer, Value:,http://localhost/FoodWebApi/swagger/ui/indexKey:User-Agent, Value:,Mozilla/5.0,(Windows NT 6.3; WOW64),AppleWebKit/537.36,(KHTML, like Gecko),Chrome/55.0.2883.87,Safari/537.36Key:Origin, Value:,http://localhost
+Request:{
+  "foodId": 0,
+  "description": "test",
+
+}
+

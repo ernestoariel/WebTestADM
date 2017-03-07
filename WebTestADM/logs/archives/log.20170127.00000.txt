@@ -1,0 +1,198 @@
+2017-01-17 12:34:19.3124|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|System.Data.SqlClient.SqlException (0x80131904): Cannot drop database "FoodDiet" because it is currently in use.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.NonQuery(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.SqlServer.SqlProviderServices.<>c__DisplayClass30.<DropDatabase>b__2e(DbConnection conn)
+   at System.Data.Entity.SqlServer.SqlProviderServices.<>c__DisplayClass33.<UsingConnection>b__32()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass1.<Execute>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.SqlServer.SqlProviderServices.UsingMasterConnection(DbConnection sqlConnection, Action`1 act)
+   at System.Data.Entity.SqlServer.SqlProviderServices.DropDatabase(SqlConnection sqlConnection, Nullable`1 commandTimeout, String databaseName)
+   at System.Data.Entity.SqlServer.SqlProviderServices.DbDeleteDatabase(DbConnection connection, Nullable`1 commandTimeout, StoreItemCollection storeItemCollection)
+   at System.Data.Entity.Database.Delete()
+   at System.Data.Entity.DropCreateDatabaseAlways`1.InitializeDatabase(TContext context)
+   at System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)
+   at System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()
+   at System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Include(String path)
+   at System.Data.Entity.Infrastructure.DbQuery`1.Include(String path)
+   at System.Data.Entity.QueryableExtensions.Include[T,TProperty](IQueryable`1 source, Expression`1 path)
+   at Food.Services.FoodService.GetAll() in C:\AppSource\Personal\WebTestADM\Food.Services\FoodService.cs:line 33
+   at Food.WebApi.Controllers.FoodsController.GetFoods() in C:\AppSource\Personal\WebTestADM\WebTestADM\Controllers\FoodsController.cs:line 33
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+ClientConnectionId:90da2059-d2e3-4783-a4d2-3cfa0194bc19
+Error Number:3702,State:4,Class:16
+2017-01-17 12:34:19.3463|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|AbsolutePath:/FoodWebApi/api/Foods, Uri:http://localhost/FoodWebApi/api/Foods, Scheme:http
+HttpVerb:GET
+Headers:Key:Connection, Value:,keep-aliveKey:Accept, Value:,application/jsonKey:Accept-Encoding, Value:,gzip,deflate,sdch,brKey:Accept-Language, Value:,es-ES,es; q=0.8,en; q=0.6Key:Host, Value:,localhostKey:Referer, Value:,http://localhost/FoodWebApi/swagger/ui/indexKey:User-Agent, Value:,Mozilla/5.0,(Windows NT 6.3; WOW64),AppleWebKit/537.36,(KHTML, like Gecko),Chrome/55.0.2883.87,Safari/537.36
+Controller:Food.WebApi.Controllers.FoodsController
+Request:
+
+2017-01-17 12:51:30.7790|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|System.InvalidCastException: Unable to cast object of type 'Food.Services.DTOs.FoodDTO' to type 'Food.Services.DTOs.FoodDTOCreate'.
+   at Food.Services.FoodService.AddFood(FoodDTO foodDto) in C:\AppSource\Personal\WebTestADM\Food.Services\FoodService.cs:line 72
+   at Food.WebApi.Controllers.FoodsController.Add(FoodDTO foodDto) in C:\AppSource\Personal\WebTestADM\WebTestADM\Controllers\FoodsController.cs:line 66
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2017-01-17 12:51:30.8110|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|AbsolutePath:/FoodWebApi/api/Foods, Uri:http://localhost/FoodWebApi/api/Foods, Scheme:http
+HttpVerb:POST
+Headers:Key:Connection, Value:,keep-aliveKey:Accept, Value:,application/jsonKey:Accept-Encoding, Value:,gzip,deflate,brKey:Accept-Language, Value:,es-ES,es; q=0.8,en; q=0.6Key:Host, Value:,localhostKey:Referer, Value:,http://localhost/FoodWebApi/swagger/ui/indexKey:User-Agent, Value:,Mozilla/5.0,(Windows NT 6.3; WOW64),AppleWebKit/537.36,(KHTML, like Gecko),Chrome/55.0.2883.87,Safari/537.36Key:Origin, Value:,http://localhost
+Controller:Food.WebApi.Controllers.FoodsController
+Request:
+
+2017-01-17 12:52:50.6113|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|System.InvalidCastException: Unable to cast object of type 'Food.Services.DTOs.FoodDTO' to type 'Food.Services.DTOs.FoodDTOCreate'.
+   at Food.Services.FoodService.AddFood(FoodDTO foodDto) in C:\AppSource\Personal\WebTestADM\Food.Services\FoodService.cs:line 72
+   at Food.WebApi.Controllers.FoodsController.Add(FoodDTO foodDto) in C:\AppSource\Personal\WebTestADM\WebTestADM\Controllers\FoodsController.cs:line 66
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2017-01-17 12:52:50.6453|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|AbsolutePath:/FoodWebApi/api/Foods, Uri:http://localhost/FoodWebApi/api/Foods, Scheme:http
+HttpVerb:POST
+Headers:Key:Connection, Value:,keep-aliveKey:Accept, Value:,application/jsonKey:Accept-Encoding, Value:,gzip,deflate,brKey:Accept-Language, Value:,es-ES,es; q=0.8,en; q=0.6Key:Host, Value:,localhostKey:Referer, Value:,http://localhost/FoodWebApi/swagger/ui/indexKey:User-Agent, Value:,Mozilla/5.0,(Windows NT 6.3; WOW64),AppleWebKit/537.36,(KHTML, like Gecko),Chrome/55.0.2883.87,Safari/537.36Key:Origin, Value:,http://localhost
+Controller:Food.WebApi.Controllers.FoodsController
+Request:
+
+2017-01-17 12:54:14.6634|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|System.InvalidCastException: Unable to cast object of type 'Food.Services.DTOs.FoodDTO' to type 'Food.Services.DTOs.FoodDTOCreate'.
+   at Food.Services.FoodService.AddFood(FoodDTO foodDto) in C:\AppSource\Personal\WebTestADM\Food.Services\FoodService.cs:line 72
+   at Food.WebApi.Controllers.FoodsController.Add(FoodDTO foodDto) in C:\AppSource\Personal\WebTestADM\WebTestADM\Controllers\FoodsController.cs:line 66
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2017-01-17 12:54:14.6964|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|AbsolutePath:/FoodWebApi/api/Foods, Uri:http://localhost/FoodWebApi/api/Foods, Scheme:http
+HttpVerb:POST
+Headers:Key:Connection, Value:,keep-aliveKey:Accept, Value:,application/jsonKey:Accept-Encoding, Value:,gzip,deflate,brKey:Accept-Language, Value:,es-ES,es; q=0.8,en; q=0.6Key:Host, Value:,localhostKey:Referer, Value:,http://localhost/FoodWebApi/swagger/ui/indexKey:User-Agent, Value:,Mozilla/5.0,(Windows NT 6.3; WOW64),AppleWebKit/537.36,(KHTML, like Gecko),Chrome/55.0.2883.87,Safari/537.36Key:Origin, Value:,http://localhost
+Controller:Food.WebApi.Controllers.FoodsController
+Request:
+
+2017-01-17 13:15:36.3211|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|System.InvalidCastException: Unable to cast object of type 'Food.Services.DTOs.FoodDTO' to type 'Food.Services.DTOs.FoodDTOCreate'.
+   at Food.Services.FoodService.AddFood(FoodDTO foodDto) in C:\AppSource\Personal\WebTestADM\Food.Services\FoodService.cs:line 72
+   at Food.WebApi.Controllers.FoodsController.Add(FoodDTO foodDto) in C:\AppSource\Personal\WebTestADM\WebTestADM\Controllers\FoodsController.cs:line 66
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2017-01-17 13:15:38.5797|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|AbsolutePath:/FoodWebApi/api/Foods, Uri:http://localhost/FoodWebApi/api/Foods, Scheme:http
+HttpVerb:POST
+Headers:Key:Connection, Value:,keep-aliveKey:Accept, Value:,application/jsonKey:Accept-Encoding, Value:,gzip,deflate,brKey:Accept-Language, Value:,es-ES,es; q=0.8,en; q=0.6Key:Host, Value:,localhostKey:Referer, Value:,http://localhost/FoodWebApi/swagger/ui/indexKey:User-Agent, Value:,Mozilla/5.0,(Windows NT 6.3; WOW64),AppleWebKit/537.36,(KHTML, like Gecko),Chrome/55.0.2883.87,Safari/537.36Key:Origin, Value:,http://localhost
+Controller:Food.WebApi.Controllers.FoodsController
+Request:
+
+2017-01-27 16:05:52.1983|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|FluentValidation.ValidationException: Validation failed: 
+ -- 'Food Id' should be empty.
+   at FluentValidation.DefaultValidatorExtensions.ValidateAndThrow[T](IValidator`1 validator, T instance, String ruleSet) in C:\projects\FluentValidation\src\FluentValidation\DefaultValidatorExtensions.cs:line 890
+   at Food.Services.FoodService.AddFood(FoodDTO foodDto) in C:\AppSource\Personal\WebTestADM\Food.Services\FoodService.cs:line 71
+   at Food.WebApi.Controllers.FoodsController.Add(FoodDTO foodDto) in C:\AppSource\Personal\WebTestADM\WebTestADM\Controllers\FoodsController.cs:line 66
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.AuthenticationFilterResult.<ExecuteAsync>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Dispatcher.HttpControllerDispatcher.<SendAsync>d__1.MoveNext()
+2017-01-27 16:05:52.2434|Food.WebApi.Plumbing.GlobalExceptionLogger|ERROR|AbsolutePath:/FoodWebApi/api/Foods, Uri:http://localhost/FoodWebApi/api/Foods, Scheme:http
+HttpVerb:POST
+Headers:Key:Connection, Value:,keep-aliveKey:Accept, Value:,application/jsonKey:Accept-Encoding, Value:,gzip,deflate,brKey:Accept-Language, Value:,es-ES,es; q=0.8,en; q=0.6Key:Host, Value:,localhostKey:Referer, Value:,http://localhost/FoodWebApi/swagger/ui/indexKey:User-Agent, Value:,Mozilla/5.0,(Windows NT 6.3; WOW64),AppleWebKit/537.36,(KHTML, like Gecko),Chrome/55.0.2883.87,Safari/537.36Key:Origin, Value:,http://localhost
+Controller:Food.WebApi.Controllers.FoodsController
+Request:
+

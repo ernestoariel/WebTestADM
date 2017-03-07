@@ -38,6 +38,10 @@
       <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="FluentValidation, Version=6.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentValidation.6.2.1.0\lib\Net45\FluentValidation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Mehdime.Entity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Mehdime.Entity.1.0.0\lib\Mehdime.Entity.dll</HintPath>
       <Private>True</Private>
@@ -55,7 +59,12 @@
   <ItemGroup>
     <Compile Include="DiaryService.cs" />
     <Compile Include="DTOs\FoodDTO.cs" />
+    <Compile Include="DTOs\FoodDTOValidator.cs" />
+    <Compile Include="DTOs\FoodMapper.cs" />
+    <Compile Include="DTOs\IFoodDTOValidatorFactory.cs" />
     <Compile Include="DTOs\MeasureDTO.cs" />
+    <Compile Include="DTOs\MeasureDTOValidator.cs" />
+    <Compile Include="DTOs\MeasureMapper.cs" />
     <Compile Include="FoodService.cs" />
     <Compile Include="IDiaryService.cs" />
     <Compile Include="IFoodService.cs" />
@@ -66,6 +75,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Food.Common\Food.Common.csproj">
+      <Project>{9ae42dd8-0774-4451-a9a2-84504990940b}</Project>
+      <Name>Food.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Food.Core\Food.Core.csproj">
       <Project>{5a3c5e80-98e4-429a-977f-3aa049251552}</Project>
       <Name>Food.Core</Name>
